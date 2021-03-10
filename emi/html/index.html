@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="../styles/index.css"></link>
+  </head>
+  <body onload="loadedValues()">
+    <div id="main_content">
+      <div id="content">
+        <div id="emi_calc">
+            <div id="loan_amount">
+                <label for="p_range_values">Loan amount</label>
+                <output id="p_value"></output>
+                <input
+                    type="range"
+                    id="p_range_values"
+                    min="100000"
+                    max="1000000"
+                    oninput="p_range_value(this.value)"
+                />
+                <p id="p_start_value">1L</p>
+                <p id="p_end_value">1Cr</p>
+            </div>
+            <div id="tenure">
+                <label for="t_range_values">Tenure(years)</label>
+                <output id="t_value"></output>
+                <input
+                    type="range"
+                    id="t_range_values"
+                    min="0"
+                    max="15"
+                    oninput="t_range_value(this.value)"
+                />
+                <p id="t_start_value">1</p>
+                <p id="t_end_value">30</p>
+            </div>
+            <div id="interest_rate">
+                <label for="i_range_values">Interest(%)</label>
+                <output id="i_value"></output>
+                <input
+                    type="range"
+                    id="i_range_values"
+                    min="0"
+                    max="15"
+                    step="0.01"
+                    oninput="i_range_value(this.value)"
+                />
+                <!-- <br> -->
+                <p id="i_start_value">0</p>
+                <p id="i_end_value">15</p>
+            </div>
+
+            <!-- <div id="emi">
+                <button id="emi_button" onClick="setValues()">EMI</button>
+            </div> -->
+
+        </div>
+        
+        <div id="result">
+          <div class="resultInfo">
+            <label for="monthly_emi">Monthly EMI </label>
+            <div id="emi">&#8377;
+            <input id="monthly_emi" readonly/>
+            </div>
+          </div>
+          <div class="resultInfo">
+            <label for="principal" >Principal </label>
+            <div id="principal_amount">
+              &#8377;
+            <input id="principal" readonly />
+            </div>
+          </div>
+          <div class="resultInfo">
+            <label for="interest">Interest </label>
+            <div id="interest_amount">
+              &#8377;
+            <input id="interest" readonly/>
+            </div>
+          </div>
+          <div class="resultInfo">
+            <label for="payable_amount">Total Amount Payable</label>    
+            <div id="pay">
+              &#8377;
+            <input id="payable_amount" readonly />            
+            </div>                
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
+
+
+
+<!-- <p>&#8377;</p> -->

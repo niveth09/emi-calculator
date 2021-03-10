@@ -1,0 +1,170 @@
+* {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+#main_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* border: 1px solid black; */
+}
+#content {
+  /* border: 1px solid black; */
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#emi_calc {
+  height: 50%;
+  float: left;
+  /* display: inline-block; */
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 40%;
+  /* margin-bottom: 20px; */
+  /* border: 1px solid black; */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  /* background-color: #c7ffd8; */
+  /* width: 100px; */
+  /* border: 1px solid black; */
+  /* display: block; */
+}
+p {
+  display: inline-block;
+  color: gray;
+}
+#p_end_value {
+  padding-left: 35%;
+}
+
+#t_end_value,
+#i_end_value {
+  padding-left: 38%;
+}
+
+#p_value,
+#t_value {
+  padding-left: 20%;
+}
+
+#i_value {
+  padding-left: 24%;
+  /* outline:none; */
+}
+
+label {
+  color: gray;
+  font-style: 20px;
+}
+
+/* input[type="range"] {
+  -webkit-appearance: none;
+} */
+
+/* input[type="range"]::-webkit-slider-runnable-track {
+  width: 500px;
+  height: 5px;
+  background: #161d6f;
+  border: none;
+  border-radius: 3px;
+} */
+
+/* input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #c7ffd8;
+  margin-top: -3px;
+} */
+
+/* input[type="range"]:focus {
+  outline: none;
+} */
+
+/* input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+} */
+/* input[type="range"]::-webkit-slider-thumb::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 500px;
+  left: -2px;
+  top: 8px;
+  background: #161d6f;
+} */
+
+#emi {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+#result {
+  background-color: #edf5ff;
+  width: 20%;
+  height: 30%;
+  padding-left: 20px;
+  /* padding-top: 20px; */
+  padding-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: 5px;
+  /* text-align: center; */
+  /* border: 1px solid black; */
+  /* margin-top: 20px; */
+}
+
+.resultInfo {
+  display: inline-block;
+}
+
+input {
+  width: 50%;
+  /* border: 1px solid black; */
+  /* direction: rtl; */
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: block;
+  border: none;
+}
+/* output {
+  padding-left: 50px;
+  display: inline;
+} */
+
+#monthly_emi,
+#interest,
+#payable_amount,
+#principal {
+  /* display: inline; */
+  display: inline-block;
+  background-color: #edf5ff;
+  font-size: 20px;
+  outline: none;
+}
+
+#monthly_emi {
+  /* display: inline-block; */
+  color: #541bec;
+}
+
+#emi {
+  color: #541bec;
+  font-size: 22px;
+}
+
+#pay,
+#interest_amount,
+#principal_amount {
+  color: black;
+  font-size: 22px;
+  margin-top: 10px;
+  padding-left: 20px;
+}
